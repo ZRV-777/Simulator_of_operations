@@ -1,0 +1,3 @@
+G:/Develop/modul_25_task_1/cmake-build-debug/CMakeFiles/Simulator_of_operations.dir
+G:/Develop/modul_25_task_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+G:/Develop/modul_25_task_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
