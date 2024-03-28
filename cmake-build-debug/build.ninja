@@ -52,12 +52,14 @@ build cmake_object_order_depends_target_Simulator_of_operations: phony || CMakeF
 build CMakeFiles/Simulator_of_operations.dir/main.cpp.obj: CXX_COMPILER__Simulator_of_operations_unscanned_Debug G$:/Develop/modul_25_task_1/main.cpp || cmake_object_order_depends_target_Simulator_of_operations
   DEP_FILE = CMakeFiles\Simulator_of_operations.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IG:/Develop/modul_25_task_1/include
   OBJECT_DIR = CMakeFiles\Simulator_of_operations.dir
   OBJECT_FILE_DIR = CMakeFiles\Simulator_of_operations.dir
 
 build CMakeFiles/Simulator_of_operations.dir/src/tools.cpp.obj: CXX_COMPILER__Simulator_of_operations_unscanned_Debug G$:/Develop/modul_25_task_1/src/tools.cpp || cmake_object_order_depends_target_Simulator_of_operations
   DEP_FILE = CMakeFiles\Simulator_of_operations.dir\src\tools.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IG:/Develop/modul_25_task_1/include
   OBJECT_DIR = CMakeFiles\Simulator_of_operations.dir
   OBJECT_FILE_DIR = CMakeFiles\Simulator_of_operations.dir\src
 

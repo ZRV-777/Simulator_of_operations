@@ -1,12 +1,13 @@
 # ninja log v5
 2	38	7328802337796458	CMakeFiles/SimulatorOfOperations.dir/src/tools.cpp.obj	d08450e5f03b7dcb
-0	118	7332562696496839	build.ninja	dc92c4e9f4d03935
+0	129	7332637055641408	build.ninja	dc92c4e9f4d03935
 4	241	7328802339836440	CMakeFiles/SimulatorOfOperations.dir/src/main.cpp.obj	b3c01e5727c2d8a0
-0	6	0	clean	22bc9c2d6dc25aeb
-241	291	7328802340306428	SimulatorOfOperations.exe	ecfce35f929b9ad9
-6	375	7332562295081628	CMakeFiles/Simulator_of_operations.dir/src/tools.cpp.obj	2b796074124123fa
-2	394	7332562295261619	CMakeFiles/Simulator_of_operations.dir/src/main.cpp.obj	43dc2d1c0b80c7dd
-0	129	7332562696496839	build.ninja	dc92c4e9f4d03935
 0	5	0	clean	22bc9c2d6dc25aeb
+241	291	7328802340306428	SimulatorOfOperations.exe	ecfce35f929b9ad9
 6	351	7332562701236857	CMakeFiles/Simulator_of_operations.dir/src/tools.cpp.obj	2b796074124123fa
+2	394	7332562295261619	CMakeFiles/Simulator_of_operations.dir/src/main.cpp.obj	43dc2d1c0b80c7dd
 2	367	7332562701396862	CMakeFiles/Simulator_of_operations.dir/main.cpp.obj	1e083199a9ebef70
+0	6	0	clean	22bc9c2d6dc25aeb
+2	346	7332637438836718	CMakeFiles/Simulator_of_operations.dir/main.cpp.obj	c420d81152c50e5f
+5	350	7332637438866762	CMakeFiles/Simulator_of_operations.dir/src/tools.cpp.obj	5a8244c15651bd5
+350	536	7332637440698584	Simulator_of_operations.exe	b1b95f0a3fff1ad0

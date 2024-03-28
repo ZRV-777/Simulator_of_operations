@@ -1,5 +1,5 @@
-//#include "tools.h"
-#include "../include/tools.h"
+#include "tools.h"
+
 
 vector<coordinate> input_coordinate_point(double x, double y, vector<coordinate> *vector)
 {
@@ -19,24 +19,12 @@ bool check_coordinate (vector<coordinate> &point_one, vector<coordinate> &point_
     else return true;
 }
 
-bool is_cut_start (vector<coordinate> &point_one, vector<coordinate> &point_two)
+bool is_valid_point_cut (vector<coordinate> &point_start, vector<coordinate> &point_check, vector<coordinate> &point_end)
 {
-    if (point_one[0].x < point_two[0].x && point_one[0].y < point_two[0].y)
-    {
-        return false;
-    }
+    if ((point_start[0].x <= point_check[0].x && point_end[0].x >= point_check[0].x) &&
+        (point_start[0].y <= point_check[0].y && point_end[0].y >= point_check[0].y)) return true;
 
-    return true;
-}
-
-bool is_cut_end (vector<coordinate> &point_one, vector<coordinate> &point_two)
-{
-    if (point_one[0].x > point_two[0].x && point_one[0].y > point_two[0].y)
-    {
-        return false;
-    }
-
-    return true;
+    return false;
 }
 
 void scalpel(vector <coordinate> &scalpel_start, vector <coordinate> &scalpel_end)

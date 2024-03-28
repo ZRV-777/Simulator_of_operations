@@ -1,4 +1,4 @@
-#include "src/tools.cpp"
+#include "tools.h"
 
 using namespace std;
 
@@ -59,13 +59,9 @@ int main()
             {
                 cout << endl << "Input hemostat point" << endl;
                 input_coordinate_point(coordinate_x, coordinate_y, &point_h);
-                if (!is_cut_start(point_h, scalpel_start))
+                if (!is_valid_point_cut(scalpel_start, point_h, scalpel_end))
                 {
-                    cerr << "Hemostat can't be used before the cut" << endl;
-                }
-                else if (!is_cut_end(point_h, scalpel_end))
-                {
-                    cerr << "Hemostat can't be used after the cut" << endl;
+                    cerr << "Hemostat can't be used outside the cut" << endl;
                 }
                 else
                 {
@@ -79,13 +75,9 @@ int main()
             {
                 cout << endl << "Input tweezers point" << endl;
                 input_coordinate_point(coordinate_x, coordinate_y, &point_t);
-                if (!is_cut_start(point_t, scalpel_start))
+                if (!is_valid_point_cut(scalpel_start, point_t, scalpel_end))
                 {
-                    cerr << "Tweezers can't be used before the cut" << endl;
-                }
-                else if (!is_cut_end(point_t, scalpel_end))
-                {
-                    cerr << "Tweezers can't be used after the cut" << endl;
+                    cerr << "Tweezers can't be used outside the cut" << endl;
                 }
                 else
                 {
@@ -102,6 +94,7 @@ int main()
                 if (!check_coordinate(scalpel_start, suture_start))
                 {
                     cerr << "Incorrect suture start coordinate" << endl;
+                    input_coordinate_point(coordinate_x, coordinate_y, &suture_start);
                 }
 
                 cout << endl << "Input end sewing" << endl;
@@ -109,6 +102,7 @@ int main()
                 if (!check_coordinate(scalpel_end, suture_end))
                 {
                     cerr << "Incorrect suture end coordinate" << endl;
+                    input_coordinate_point(coordinate_x, coordinate_y, &suture_end);
                 }
 
                 suture(suture_start, suture_end);
