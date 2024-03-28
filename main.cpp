@@ -5,7 +5,6 @@ using namespace std;
 int main()
 {
     string command;
-    string current_command;
 
     bool is_cut = false;
 
@@ -19,22 +18,17 @@ int main()
     vector<coordinate> suture_start;
     vector<coordinate> suture_end;
 
-    int count_command = 0;
-
     while (command != "exit")
     {
         cout << "Enter command: ";
         cin >> command;
-        current_command = command;
 
-        if (count_command == 0 && current_command != "scalpel")
+        if (!is_cut && command != "scalpel")
         {
             cerr << "\n" << "First command must be scalpel" << endl;
         }
         else
         {
-            count_command++;
-
             if (command == "scalpel")
             {
                 if (is_cut)
@@ -51,9 +45,6 @@ int main()
                 scalpel(scalpel_start, scalpel_end);
 
                 is_cut = true;
-
-                //current_command = "scalpel";
-                count_command++;
             }
             else if (command == "hemostat")
             {
@@ -67,9 +58,6 @@ int main()
                 {
                     hemostat(point_h);
                 }
-
-                //current_command = "hemostat";
-                count_command++;
             }
             else if (command == "tweezers")
             {
@@ -83,9 +71,6 @@ int main()
                 {
                     tweezers(point_t);
                 }
-
-                //current_command = "tweezers";
-                count_command++;
             }
             else if (command == "suture")
             {
@@ -117,12 +102,11 @@ int main()
                 {
                     cout << endl << "Input start cut" << endl;
                     input_coordinate_point(coordinate_x, coordinate_y, &scalpel_start);
+
                     cout << endl << "Input end cut" << endl;
                     input_coordinate_point(coordinate_x, coordinate_y, &scalpel_end);
 
                     scalpel(scalpel_start, scalpel_end);
-
-                    //current_command = "scalpel";
 
                     is_cut = true;
                 }
